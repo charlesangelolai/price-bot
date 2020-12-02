@@ -68,6 +68,14 @@ async function monitorPrice() {
     await checkPair({
       inputTokenSymbol: 'ETH',
       inputTokenAddress: '0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee',
+      outputTokenSymbol: 'SNX',
+      outputTokenAddress: '0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f',
+      inputAmount: web3.utils.toWei('1', 'ETHER')
+    })
+
+    await checkPair({
+      inputTokenSymbol: 'ETH',
+      inputTokenAddress: '0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee',
       outputTokenSymbol: 'MKR',
       outputTokenAddress: '0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2',
       inputAmount: web3.utils.toWei('1', 'ETHER')
